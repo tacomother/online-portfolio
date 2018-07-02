@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+ font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 4em;
+}
+
+footer {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #808080;
+}
+
+.slideshow-container {
+  max-width: 1024px;
+  position: relative;
+  margin: auto;
+}
+
+
+.mySlides {
+  display: none;
+}
+
+.prev,
+.next {
+  z-index: 10;
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #808080;
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  color: tomato;
+}
+
+
+.text {
+  color: #000;
+  font-size: 15px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 7.5em 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.contact {
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-bottom: 2px dotted;
+  border-top: 2px dotted;
+  margin-bottom: 4em;
+}
+
+.contact a:hover {
+  color: tomato;
+}
